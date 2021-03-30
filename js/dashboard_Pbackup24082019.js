@@ -1,0 +1,59 @@
+$(function(){
+    $("#signOut").on('click',function(){
+        $.ajax({
+            url:'logout.php?status=logOut',
+            success:function(rep){
+                //console.log(rep);
+                if(rep==1){
+                    location.href='index.html'
+                }
+            }
+        })
+    })
+
+    $("#countPR").hide();
+    $("#countPO").hide();
+    $("#countCM").hide();
+    $("#countMT").hide();
+
+    //GET COUNT PR
+    $.get('api/controller/pr.php?status=ReadCount',function(rep){
+        //console.log(rep);
+        $('#loading-pr').hide();
+        $("#countPR").show();
+        $("#countPR").text(rep);
+    })
+
+    //GET COUNT PR
+    $.get('api/controller/po.php?status=ReadCount',function(rep){
+        //console.log(rep);
+        $('#loading-po').hide();
+        $("#countPO").show();
+        $("#countPO").text(rep);
+    })
+
+	//GET COUNT ISD
+    $.get('api/controller/isd.php?status=ReadCount',function(rep){
+
+        $('#loading-isd').hide();
+        $("#countISD").show();
+        $('#countISD').text(rep);
+    })
+	
+	//GET COUNT CM
+    $.get('api/controller/cm.php?status=ReadCount',function(rep){
+
+        $('#loading-cm').hide();
+        $("#countCM").show();
+        $('#countCM').text(rep);
+    })
+	
+	//GET COUNT MT
+    $.get('api/controller/mt.php?status=ReadCount',function(rep){
+        $('#loading-mt').hide();
+        $("#countMT").show();
+        $('#countMT').text(rep);
+    })
+	
+	
+})

@@ -1,0 +1,12 @@
+$(function(){
+    $("#signOut").on('click',function(){
+        $.ajax({
+            url:'logout.php?status=logOut',
+            success:function(rep){
+                if(rep==1){
+                    location.href='index.html'
+                }
+            }
+        })
+    });
+})

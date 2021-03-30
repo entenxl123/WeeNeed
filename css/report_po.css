@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit/Kanit-Regular.ttf');
+}
+
+body{
+    background-color:#2c3e50;
+    font-size:14px;
+	font-family: 'Kanit', sans-serif;
+}
+
+.top-main{
+    margin-top:70px;
+}
+.card-main{
+    margin-top:70px;
+}
+
+.card-middle{
+    margin-bottom:20px;
+}
+
+.card-bg{
+    background-color:#ecf0f1;
+    padding:4%;
+   
+
+}
+
+.card-invoice{
+    background-color:#ecf0f1;
+}
+
+.img-header{
+    height:150px;
+}
+
+.footer-bg{
+    background-color:#2d3436;
+    color:#ecf0f1;
+}
+
+.size-table{
+    width:300%;
+}
+@media (min-width: 576px) { 
+    .size-table{
+        width:100% !important;
+    }
+ }
+
+
+@media (min-width: 768px) { 
+    .size-table{
+        width:100% !important;
+    }
+ }
+
+
+@media (min-width: 992px) { 
+    .size-table{
+        width:100% !important;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    .size-table{
+        width:100% !important;
+    }
+ }
+
+
+

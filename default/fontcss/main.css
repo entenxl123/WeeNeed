@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Kanit';
+  src: url('fonts/Kanit/Kanit-Regular.ttf');
+}
+body{
+    background-color:#c0392b;
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-sm{
+    font-size: 12px;
+}
+
+#map{
+	height: 500px;
+	width: 100%;
+}
+
+#place_name div{
+	text-align: center;
+}

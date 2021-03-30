@@ -1,0 +1,31 @@
+body{
+    color:#ffffff;
+    font-family: 'Archivo', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../asset/img/bg_green.jpg');
+    height:100vh;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.login{
+    margin-top:8%;
+   
+}
+
+.login-error{
+    font-size: 14px;
+    color:#f39c12;
+}
+
+.login-bg{
+    width:100%;
+    font-size:16px;
+    color:#ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+}
+
